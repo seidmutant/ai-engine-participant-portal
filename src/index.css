@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#1a0b2e] text-[#b4ff39];
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#1a0b2e];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#b4ff39]/20 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-[#b4ff39]/30;
+}
